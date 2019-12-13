@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1P-gx-hlj">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="summer_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-kl-bol">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0XA-pW-uhc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-aB-YJk">
+                                                <rect key="frame" x="334" y="35" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9TG-tA-WvQ"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Lgb-ou-KFS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Summer Camp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogE-Ow-ttS">
+                                                <rect key="frame" x="35" y="75" width="110" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="0Nx-Jq-uZp"/>
+                                                    <constraint firstAttribute="width" constant="110" id="Y5L-dH-EPV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VRI-Iu-gbE">
+                                                <rect key="frame" x="282" y="390" width="102" height="91"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Your Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSZ-j0-VYc">
+                                                <rect key="frame" x="20" y="524" width="374" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="QBi-lc-gLl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI9-vZ-ABe">
+                                                <rect key="frame" x="20" y="707" width="374" height="40"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MiW-p1-Fbw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Start Camping">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Startcampingbtn_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDy-Ze-G8K"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="main image" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-AY-iIH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VRI-Iu-gbE" firstAttribute="top" secondItem="y7B-AY-iIH" secondAttribute="bottom" constant="30" id="C15-Vw-LFe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sRH-kl-bol" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4zW-Y6-E4V"/>
+                            <constraint firstAttribute="bottom" secondItem="sRH-kl-bol" secondAttribute="bottom" id="5ED-Ju-b9I"/>
+                            <constraint firstItem="sRH-kl-bol" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bd7-MH-9aR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y7B-AY-iIH" secondAttribute="trailing" id="bnq-8v-w3f"/>
+                            <constraint firstItem="0XA-pW-uhc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="m2H-4w-6C9"/>
+                            <constraint firstItem="y7B-AY-iIH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ojm-OK-09D"/>
+                            <constraint firstItem="y7B-AY-iIH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sPs-Qv-hCX"/>
+                            <constraint firstItem="sRH-kl-bol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yeK-MQ-cpb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="er6-6q-hlR"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="Startcampingbtn_outlet" destination="SI9-vZ-ABe" id="WnD-Ie-V3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
+        </scene>
+        <!--Sea side-->
+        <scene sceneID="rAX-UX-cda">
+            <objects>
+                <viewController storyboardIdentifier="SeasideViewController" id="NeM-Hz-F0J" customClass="SeasideViewController" customModule="summer_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z1O-cJ-dMn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="10" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-DH-Xcz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="200" id="Hms-v2-Cqk" customClass="SeasideTableViewCell" customModule="summer_camp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hms-v2-Cqk" id="dk2-l1-X30">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arugam Bay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-4r-9xC">
+                                                    <rect key="frame" x="35" y="31" width="200" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="htZ-6j-TpB"/>
+                                                        <constraint firstAttribute="width" constant="200" id="nWl-mm-R0n"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfX-HF-AWW">
+                                                    <rect key="frame" x="45" y="101" width="180" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ojd-Me-UqP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <state key="normal" title="Session        May - July">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seaside" translatesAutoresizingMaskIntoConstraints="NO" id="AIp-gI-fCC">
+                                                    <rect key="frame" x="243" y="0.0" width="171" height="199.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="AIp-gI-fCC" secondAttribute="bottom" id="1q6-SW-EdG"/>
+                                                <constraint firstAttribute="trailing" secondItem="AIp-gI-fCC" secondAttribute="trailing" id="Ecc-m7-prr"/>
+                                                <constraint firstItem="mfX-HF-AWW" firstAttribute="centerX" secondItem="gdA-4r-9xC" secondAttribute="centerX" id="Gcd-f2-FeX"/>
+                                                <constraint firstItem="AIp-gI-fCC" firstAttribute="leading" secondItem="gdA-4r-9xC" secondAttribute="trailing" constant="8" id="LQb-qu-tyB"/>
+                                                <constraint firstItem="gdA-4r-9xC" firstAttribute="top" secondItem="dk2-l1-X30" secondAttribute="topMargin" constant="20" id="O2x-SM-SVd"/>
+                                                <constraint firstItem="AIp-gI-fCC" firstAttribute="leading" secondItem="mfX-HF-AWW" secondAttribute="trailing" constant="18" id="TlA-Cb-Yel"/>
+                                                <constraint firstItem="gdA-4r-9xC" firstAttribute="leading" secondItem="dk2-l1-X30" secondAttribute="leadingMargin" constant="15" id="e1S-cz-4ao"/>
+                                                <constraint firstItem="mfX-HF-AWW" firstAttribute="top" secondItem="gdA-4r-9xC" secondAttribute="bottom" constant="25" id="lYr-fr-Ih9"/>
+                                                <constraint firstItem="AIp-gI-fCC" firstAttribute="top" secondItem="dk2-l1-X30" secondAttribute="top" id="uCw-B4-XFJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Seasideimg_outlet" destination="AIp-gI-fCC" id="PXu-zi-EHN"/>
+                                            <outlet property="Seasidelabel_outlet" destination="gdA-4r-9xC" id="cud-vY-EWP"/>
+                                            <outlet property="Sessionbtn_outlet" destination="mfX-HF-AWW" id="zUz-dm-1Yn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NeM-Hz-F0J" id="cqv-bb-X2z"/>
+                                    <outlet property="delegate" destination="NeM-Hz-F0J" id="WRa-uP-b64"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Vm-DH-Xcz" firstAttribute="trailing" secondItem="ukV-7w-rAX" secondAttribute="trailing" id="4Ny-lw-Z0S"/>
+                            <constraint firstItem="3Vm-DH-Xcz" firstAttribute="leading" secondItem="ukV-7w-rAX" secondAttribute="leading" id="4kG-jB-Z27"/>
+                            <constraint firstItem="3Vm-DH-Xcz" firstAttribute="top" secondItem="ukV-7w-rAX" secondAttribute="top" id="d8l-7m-ATe"/>
+                            <constraint firstAttribute="bottom" secondItem="3Vm-DH-Xcz" secondAttribute="bottom" id="vm0-h0-mqV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ukV-7w-rAX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sea side" id="asR-JB-naG">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="jwB-82-joB"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="Seasidetableview" destination="3Vm-DH-Xcz" id="wpl-nd-5Ed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0U7-1n-HFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833.3333333333335" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P0H-qB-esA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H1P-gx-hlj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EI6-Qp-Qmc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lnp-sv-k1o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWq-Hd-RIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="920" height="580"/>
+        <image name="main image" width="650" height="975"/>
+        <image name="profile" width="225" height="225"/>
+        <image name="seaside" width="225" height="225"/>
+    </resources>
+</document>
